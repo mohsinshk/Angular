@@ -1,0 +1,14 @@
+<div>
+    <h2>User List</h2>
+<div class="col-md-4">
+    <ul class="list group group-item">
+    <li class="list-group-item" *ngFor="let user of users">
+    <app-user [user]='user'></app-user>
+    </li>
+    </ul>
+</div>
+<div class="col-md-5">
+    <router-outlet></router-outlet>
+    <app-placeholder></app-placeholder>
+</div>
+</div>
